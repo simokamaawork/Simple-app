@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "a backend application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simokamaawork/Simple-app.git"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "simon kamau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simokamaawork/Simple-app/issues"
+  },
+  "homepage": "https://github.com/simokamaawork/Simple-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
