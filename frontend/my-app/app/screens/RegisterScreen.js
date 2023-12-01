@@ -16,18 +16,35 @@ const RegisterScreen = () => {
 
       <TextInput
         style={styles.input}
-        placeholder="Username"
+        placeholder="First Name"
         
       />
 
       <TextInput
         style={styles.input}
-        placeholder="Password"
-        secureTextEntry
+        placeholder="Last Name"
         
       />
 
-      
+      <TextInput
+      style={styles.input}
+      placeholder='Email'
+
+      />
+
+      <TextInput
+      style = {styles.input}
+      placeholder='password'
+      secureTextEntry
+
+      />
+
+      <TextInput
+      style = {styles.input}
+      placeholder='repeat the password'
+      secureTextEntry
+
+      />
 
       <AppButton onPress={handleRegister} title="Register" style={styles.button} />
     </View>
