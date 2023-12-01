@@ -41,7 +41,7 @@ const RegisterScreen = () => {
 
       <TextInput
       style = {styles.input}
-      placeholder='repeat the password'
+      placeholder='confirm the password'
       secureTextEntry
 
       />
