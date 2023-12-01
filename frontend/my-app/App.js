@@ -11,27 +11,27 @@ import AppText from './app/components/AppText';
 
 
 const Tab = createBottomTabNavigator();
-const navigationRef = useNavigationContainerRef(); 
+// const navigationRef = useNavigationContainerRef(); 
 
 
 
 export default function App() {
   return (
 <>
-
+<LoginScreen/>
 <View style={styles.container}>
   
 <NavigationContainer>
 <Tab.Navigator>
-<Tab.Screen name="Home" component={HomePageScreen} />
-<Tab.Screen name="register" component={RegisterScreen} />
+<Tab.Screen name="Home" component />
+<Tab.Screen name="register" component />
 </Tab.Navigator>
 </NavigationContainer>
     
-<View style="{styles.home}">
-<AppText>Welcome</AppText>
-<Button title="welcome"  onPress={() => navigationRef.navigate('Home')}></Button>
-</View>
+// <View style="{styles.home}">
+ <AppText>Welcome</AppText>
+<Button title="welcome" ></Button>
+ </View>
       <StatusBar style="auto" />
     </View>
 </>
