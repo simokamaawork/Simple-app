@@ -3,6 +3,8 @@ import React from 'react'
 import AppScreen from '../components/AppScreen'
 import AppText from '../components/AppText'
 import AppButton from '../components/AppButton'
+import AppTextInput from '../components/TextInput'
+
 
 
 const LoginScreen = () => {
@@ -11,16 +13,16 @@ const LoginScreen = () => {
   }
   
   return (
-<AppScreen>
+<AppScreen style = {styles.container}>
 <AppText>Login To The App</AppText>
 
-<TextInput
+<AppTextInput
 style = {styles.input}
 placeholder='Username'
 
 />
 
-<TextInput
+<AppTextInput
 style={styles.input}
 placeholder='Password'
 secureTextEntry
@@ -40,5 +42,9 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 10,
+  },
+  container:{
+    justifyContent: "center",
+    alignItems: "center",
   }
 })

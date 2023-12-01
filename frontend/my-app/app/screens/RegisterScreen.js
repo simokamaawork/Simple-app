@@ -2,6 +2,8 @@ import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import AppButton from '../components/AppButton';
 import AppText from '../components/AppText';
+import AppTextInput from '../components/TextInput';
+
 
 
 const RegisterScreen = () => {
@@ -46,7 +48,7 @@ const RegisterScreen = () => {
 
       />
 
-      <AppButton onPress={handleRegister} title="Register" style={styles.button} />
+      <AppButton onPress={handleRegister} title="Register" />
     </View>
   );
 };

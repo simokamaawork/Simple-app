@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet, TouchableWithoutFeedback, View } from "react-native"
-import { Image } from "react-native-expo-image-cache"
+
 
 import colors from "../config/colors"
 import Text from "./Text"
