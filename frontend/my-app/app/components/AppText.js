@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-const AppText = ({ children, style }) => {
+const AppText = ({ children, style, numberOfLines=1 }) => {
   return <Text style={[styles.text, style]}>{children}</Text>;
 };
 
