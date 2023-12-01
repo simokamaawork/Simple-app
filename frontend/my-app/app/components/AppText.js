@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { Text, StyleSheet } from 'react-native';
 
-const AppText = () => {
-  return (
-    <View>
-      <Text>AppText</Text>
-    </View>
-  )
-}
+const AppText = ({ children, style }) => {
+  return <Text style={[styles.text, style]}>{children}</Text>;
+};
 
-export default AppText
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 18,
+    color: '#333',
+    marginBottom: 10,
+  },
+});
 
-const styles = StyleSheet.create({})
+export default AppText;

@@ -1,14 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { View, SafeAreaView, StyleSheet, Platform } from 'react-native';
 
-const AppScreen = () => {
+const AppScreen = ({ children }) => {
   return (
-    <View>
-      <Text>AppScreen</Text>
-    </View>
-  )
-}
+    <SafeAreaView style={styles.safeAreaView}>
+      <View style={styles.container}>{children}</View>
+    </SafeAreaView>
+  );
+};
 
-export default AppScreen
+const styles = StyleSheet.create({
+  safeAreaView: {
+    flex: 1,
+    paddingTop: Platform.OS === 'android' ? 25 : 0, // Adjust as needed
+  },
+  container: {
+    flex: 1,
+  },
+});
 
-const styles = StyleSheet.create({})
+export default AppScreen;
